@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="session8.addController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="135.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert information" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fullname" layoutX="130.0" layoutY="182.0" prefHeight="46.0" prefWidth="239.0" promptText="Full name" />
+      <TextField fx:id="email" layoutX="130.0" layoutY="252.0" prefHeight="46.0" prefWidth="239.0" promptText="Email" />
+      <TextField fx:id="age" layoutX="130.0" layoutY="327.0" prefHeight="46.0" prefWidth="239.0" promptText="Age" />
+      <Button onAction="#submit" layoutX="208.0" layoutY="428.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="85.0" text="Add" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="error" fill="BLUE" layoutX="120.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm thành công" textAlignment="CENTER" visible="false" wrappingWidth="259.55029296875" />
+      <Button onAction="#listScreen" layoutX="369.0" layoutY="504.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="100.0" text="View list" />
+   </children>
+</Pane>
